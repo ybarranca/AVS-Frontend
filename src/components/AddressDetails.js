@@ -25,7 +25,7 @@ const AddressDetails = ({ address }) => {
     };
 
     const handleUpdateClick = () => {
-        navigate(`https://address-verifcation-api-fad6ad832469.herokuapp.com/update-address/${address._id}`);
+        navigate(`https://address-verifcation-api-fad6ad832469.herokuapp.com/update-address${address._id}`);
     };
 
 
