@@ -1,5 +1,4 @@
 {
-  "proxy": "https://address-verifcation-api-fad6ad832469.herokuapp.com",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
