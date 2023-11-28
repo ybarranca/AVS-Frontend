@@ -35,7 +35,7 @@ const AddressVerificationForm = () => {
         }
 
         try {
-            const response = await fetch('/api/addresses/compare', {
+            const response = await fetch('https://address-verifcation-api-fad6ad832469.herokuapp.com/api/addresses/compare', {
                 method: 'POST',
                 body: JSON.stringify({ streetAddress, city, state, zipCode }),
                 headers: {

@@ -13,7 +13,7 @@ const AddressDetails = ({ address }) => {
         if (!user) {
             return;
         }
-        const response = await fetch('/api/addresses/' + address._id, {
+        const response = await fetch('https://address-verifcation-api-fad6ad832469.herokuapp.com/api/addresses/' + address._id, {
             method: 'DELETE',
             headers: { 'Authorization': `Bearer ${user.token}` }
         });
@@ -25,7 +25,7 @@ const AddressDetails = ({ address }) => {
     };
 
     const handleUpdateClick = () => {
-        navigate(`/update-address/${address._id}`); // Navigate to update page
+        navigate(`https://address-verifcation-api-fad6ad832469.herokuapp.com/update-address/${address._id}`);
     };
 
 

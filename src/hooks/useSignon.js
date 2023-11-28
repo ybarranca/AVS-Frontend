@@ -10,7 +10,7 @@ export const useSignon = () => {
         setIsLoading(true)
         setError(null)
 
-        const response = await fetch('/api/user/signon', {
+        const response = await fetch('https://address-verifcation-api-fad6ad832469.herokuapp.com/api/user/signon', {
             method: 'POST', 
             headers: {'Content-Type':'application/json'},
             body: JSON.stringify({email, password})

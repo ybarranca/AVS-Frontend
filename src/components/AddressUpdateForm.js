@@ -18,7 +18,7 @@ const AddressUpdateForm = () => {
     useEffect(() => {
         const fetchAddress = async () => {
             try {
-                const response = await fetch(`/api/addresses/${id}`, {
+                const response = await fetch(`https://address-verifcation-api-fad6ad832469.herokuapp.com/api/addresses/${id}`, {
                     headers: { 'Authorization': `Bearer ${user.token}` }
                 });
                 const json = await response.json();
@@ -65,7 +65,7 @@ const AddressUpdateForm = () => {
 
         try {
             const address = { streetAddress, city, state, zipCode };
-            const response = await fetch(`/api/addresses/${id}`, {
+            const response = await fetch(`https://address-verifcation-api-fad6ad832469.herokuapp.com/api/addresses/${id}`, {
                 method: 'PATCH',
                 body: JSON.stringify(address),
                 headers: {

@@ -13,7 +13,7 @@ const Home = () => {
 
     useEffect(() => {
      const fetchAddresses = async () => {
-        const response = await fetch('/api/addresses', {
+        const response = await fetch('https://address-verifcation-api-fad6ad832469.herokuapp.com/api/addresses', {
             headers: {
                 'Authorization': `Bearer ${user.token}`
             }
