@@ -47,7 +47,7 @@ const AddressVerificationForm = () => {
             const data = await response.json();
 
             if (response.ok) {
-                // Include the input address in the result for comparison
+                // Includes the input address in the result for comparison
                 setResult({ ...data, inputAddress: { streetAddress, city, state, zipCode } });
             } else {
                 setError(data.message || 'An error occurred');
